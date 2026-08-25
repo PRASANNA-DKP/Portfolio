@@ -1,0 +1,36 @@
+enga paru na neraiya project/product make panni erukan 
+
+1.first ean 5.5 feet 5 dof wheel based humanoid robot - ethan zafi 2.0(zafi robot company la na make panna product) 
+ethula neck , shoulder and elbow both hand athunala 5 dof nu solalamla?, and ethula esp32 now communication use pannan, range enaku 60 meter to 90 meter kitachithu , joystick own na fusion 360 la design panni and dot pcb board use panni solder panni end to end oru product mari make pannnan, and boady foam sheet and leather use panni silicon paste vachi make pannom, robot kulla 25kg servo motor 5 for that hand and neck and cytron 10 amps motor driver and two differential wheel based la ,jhonson motor 12v 100 rpms and 12v 10ah battery and buck converter and voltage amps indicator and arduino mega va esp32 receiver oota pair panni erunthan, sender la esp32 with joystick module and pushbuttons 12 use pannan.and auro led strip mari body fulla vachi erunthom.mukkavasi part 3d printer la design panni potom like neck shoulder joint etc, becasue easya dismandle pannura mari panni erunthom. face la 7 inch display with rp 5 vachi oru web cam with face regonation oota make pannan, design fusion 360 la potan robot boady and co2 laser cut machine la cut panni assamble pannnan.and leather fulla ooti outer look nalla kontu vanthom.
+entha project la start to end na than make pannan. and entha product making almost engaluku aroung 60k to 70k vanthuchi and selling price around 1.5 to 1.6 lakh ku sell pannalamnu plan pannom, and future la amr add panna plan pannitu erukom.and eppo antha process poitu eruku.
+
+2.autonomous robot - line follower with object picking
+
+entha project main na TRL 3- tamilnadu robotics leguge compation kaka pannan, ean company propeller technologies r&D pvt ltd conduct pannanga, aroung 5000+ tamilnadu +kerala+karnataka student kalanthukita oru event trichy la natanthuchi.
+ethula super senior game ean control la kututhanga , so athukula oru story build pannom, oru rover moon la land aakitu and ulla 3 types of samples ah collect pannitu thirupi space station ku vara mari, ethu fulla autonomous , path following line follower concept and oru robotic arm potu object sample 1 pick panni athota container la potukura mari and meentum path follow pannitu next sample 2 adn sample 3 apparam athota antha launch aaki erukumla moon la athukulla robot poitanum.
+
+ethula main issues students ku pid control theriyathu, so program pid ellama make pannanum. entha robot na than build pannan. 5 ir sensor , arduino uno, l298n motor driver and 2 mg90s servo motor and buck converter and 12v lithium ion battery , ellam use panni oru logic la make pannan.
+center la ulla ir sensor object detect panni object erunthu robotic arm pick panni back la potukom storage unit la, methi 4 ir sensor line follow panna use pannan. na etha compalete panni output etutu compatition munnadi around 10 to 15 trainers ku idea kututhu students knowlege transfer panna sonnan.
+
+
+3. autonomous mobile robot in ros2 
+
+ethan actual ah ean final year engineer project ah erunthuchi anga na teleop control vara mutichitu vanthutu , ean company la zafi robots la na full amr build pannom, 100 rpm 12v jhoon motor with encoder and rp4 b and arduino uno, cytron motor driver and rp lidar a1 , ethalam vachi than build pannan.ros2 humble la slam and navigation 2 stock use panni build pannom, entha thatava nalla understanding erunthuchi ros 2 pathi and mapp panni run panniyum pathom.
+
+and understanding purpose ka kerala and coimbatore la 2 teams oota mapping and nav la work pannitu erukom, oru project ellarum therija unitree go2 pro la and another one kerala la Autobonics  robot company oota a series robot la work pannitu erukom. 
+
+4.na normal cycle na electric cycle ah change pannan.and e car and e bike la conections and assamble pannan.
+
+na jj college la metor ah eruntha antha d2p lan make space lb nu 2 labs erunthu chi , anga na e bike and e car assamble and electical connections alm panni run pannaom, e cycle to e bike convertion na school ku panni kututhan . we 24v 350kw bldc hub motor with 20000mah battery 24v and controller and kit lam vachi oru cycle ah e cycle ah mathi kututhan.
+
+ethu ellam asasmlbe related than varum scrach la erunthu pannala
+
+5.other projects
+
+3d printing la neraiya project and product design panni make panni erukom , robotic arm,opencv la gesture control robotic hand and robotic dog etcc..
+and serving robot 4 to 5 deet la neraiya make panni erukan zafi 2.0 alavuku future vaikama konjam kamiya students ah la make pannura alavuku solli kututhu make panni erukom.athu ellama neraiya project add panni erupan pathukonga
+
+
+
+
+mela ullathu ean projects catories , nee project name mathitu super ah vachiko, antha 5.5 feet robot name zafi 2.0 atha mattum vachitu athuku pinadi enna venumnalum potuko, description adn componet usage and working mari venalum potu , ellaina single ah kuta kutu, na nalla eruntha ean portfolio la add pannikalam

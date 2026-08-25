@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/* ========================================
+   ROOT VARIABLES
+======================================== */
+
+:root {
+    --bg: #0a0a0a;
+    --panel: #111;
+    --text: #f2f0ea;
+    --muted: #929292;
+    --accent: #ff5a1f;
+    --line: #ffffff20;
+}
+
+
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.nav {
+    height: 76px;
+    padding: 0 4vw;
+
+    border-bottom: 1px solid var(--line);
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    position: sticky;
+    top: 0;
+
+    background: #0a0a0ae8;
+    backdrop-filter: blur(14px);
+
+    z-index: 20;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: .04em;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span,
+em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+.logo small {
+    font: 10px 'DM Mono', monospace;
+    color: var(--muted);
+    margin-left: 4px;
+}
+
+.nav nav {
+    display: flex;
+    gap: 26px;
+    margin-left: auto;
+
+    font: 11px 'DM Mono', monospace;
+    color: #ccc;
+}
+
+.nav-resume {
+    font: 11px 'DM Mono', monospace;
+    color: var(--accent);
+
+    border: 1px solid #ff5a1f66;
+    padding: 11px 14px;
+}
+
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+    min-height: calc(100vh - 76px);
+
+    display: grid;
+    grid-template-columns: 1.1fr 1fr .55fr;
+    align-items: center;
+
+    padding: 5vh 5vw 0;
+
+    overflow: hidden;
+    position: relative;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow,
+.label {
+    font: 11px 'DM Mono', monospace;
+    letter-spacing: .14em;
+    color: #aaa;
+}
+
+.eyebrow:before {
+    content: '';
+
+    display: inline-block;
+
+    width: 44px;
+    height: 1px;
+
+    background: var(--accent);
+
+    vertical-align: middle;
+
+    margin-right: 16px;
+}
+
+.hero h1 {
+    font-size: clamp(70px, 10vw, 150px);
+    line-height: .8;
+    letter-spacing: -.07em;
+
+    margin: 55px 0 12px;
+}
+
+.hero h2 {
+    font-size: clamp(25px, 3vw, 48px);
+    letter-spacing: .09em;
+    color: var(--accent);
+
+    margin: 0;
+}
+
+.focus {
+    font: 15px 'DM Mono', monospace;
+    letter-spacing: .13em;
+
+    margin-top: 25px;
+}
+
+.focus b {
+    color: var(--accent);
+}
+
+.hero-copy p {
+    max-width: 590px;
+
+    color: #bbb;
+    line-height: 1.7;
+
+    margin: 30px 0;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+
+    background: var(--accent);
+    color: #111;
+
+    padding: 14px 19px;
+
+    font: 11px 'DM Mono', monospace;
+    font-weight: 600;
+}
+
+.btn.outline {
+    background: transparent;
+    color: var(--text);
+
+    border: 1px solid #ffffff40;
+}
+
+
+/* ========================================
+   HERO IMAGE
+======================================== */
+
+.hero-photo-wrap {
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.orange-orb {
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+    opacity: .8;
+
+    filter: blur(1px);
+
+    bottom: 90px;
+}
+
+.hero-photo {
+    position: relative;
+    z-index: 2;
+
+    height: min(88vh, 760px);
+    max-width: 100%;
+
+    object-fit: contain;
+    object-position: center bottom;
+
+    filter: drop-shadow(0 20px 40px #000);
+}
+
+
+/* ========================================
+   STATS
+======================================== */
+
+.stats {
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 0;
+
+    padding-left: 35px;
+}
+
+.stats div {
+    border-top: 1px solid var(--line);
+
+    padding: 24px 0;
+
+    display: flex;
+    gap: 18px;
+}
+
+.stats b {
+    color: var(--accent);
+    font: 16px 'DM Mono', monospace;
+}
+
+.stats span {
+    font: 11px 'DM Mono', monospace;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   COMMON SECTIONS
+======================================== */
+
+.section {
+    padding: 110px 5vw;
+
+    border-bottom: 1px solid var(--line);
+}
+
+
+/* ========================================
+   SPLIT CONTENT
+======================================== */
+
+.split {
+    display: grid;
+
+    grid-template-columns: 32% 68%;
+
+    gap: 20px;
+}
+
+.content h2,
+.contact h2 {
+    font-size: clamp(55px, 7vw, 105px);
+    line-height: .86;
+    letter-spacing: -.06em;
+
+    margin: 0 0 35px;
+}
+
+.content p,
+.timeline p,
+.training p,
+.contact > p {
+    max-width: 780px;
+
+    color: #b6b6b6;
+    line-height: 1.75;
+}
+
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.section-head {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.section-head span {
+    font: 10px 'DM Mono', monospace;
+    color: #777;
+}
+
+
+/* ========================================
+   PROJECTS
+======================================== */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1px;
+
+    background: var(--line);
+}
+
+.project-card {
+    min-height: 330px;
+
+    background: var(--panel);
+
+    padding: 27px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: .25s;
+
+    border: 1px solid transparent;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+
+    transform: translateY(-4px);
+}
+
+.project-card span {
+    font: 12px 'DM Mono', monospace;
+    color: var(--accent);
+}
+
+.project-card h3 {
+    font-size: clamp(27px, 3vw, 48px);
+
+    line-height: .92;
+    letter-spacing: -.05em;
+}
+
+.project-card small {
+    font: 10px 'DM Mono', monospace;
+    color: #aaa;
+}
+
+
+/* ========================================
+   PROJECT VIDEO
+======================================== */
+
+.project-video {
+    width: 100%;
+
+    aspect-ratio: 9 / 16;
+
+    margin: 20px 0;
+
+    overflow: hidden;
+
+    background: #000;
+}
+
+.project-video iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+.project-video.landscape {
+    aspect-ratio: 16 / 9;
+}
+
+/* ========================================
+   OTHER PROJECTS
+======================================== */
+
+.other {
+    border-top: 1px solid var(--line);
+
+    margin-top: 45px;
+    padding-top: 25px;
+
+    display: flex;
+    gap: 40px;
+
+    font: 11px 'DM Mono', monospace;
+    color: #aaa;
+}
+
+.other b {
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+
+.other-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.other-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #000;
+  display: block;
+}
+
+/* ========================================
+   SKILLS & TRAINING
+======================================== */
+
+.skill-grid,
+.training {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0 60px;
+
+    margin-top: 55px;
+}
+
+.skill-grid article,
+.training article,
+.timeline article {
+    border-top: 1px solid var(--line);
+
+    padding: 28px 0;
+}
+
+.skill-grid h3,
+.training h3,
+.timeline h3 {
+    font-size: 16px;
+
+    margin: 0 0 10px;
+}
+
+.skill-grid p,
+.training p {
+    margin: 0;
+
+    color: #aaa;
+
+    line-height: 1.65;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   TIMELINE
+======================================== */
+
+.timeline {
+    max-width: 950px;
+
+    margin: 55px auto 0;
+}
+
+.timeline article span {
+    font: 10px 'DM Mono', monospace;
+    color: var(--accent);
+}
+
+.timeline h3 {
+    font-size: 25px;
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact {
+    min-height: 70vh;
+
+    padding: 110px 5vw;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.contact h2 {
+    margin-top: 60px;
+}
+
+.contact-links {
+    display: flex;
+
+    gap: 35px;
+
+    margin: 45px 0;
+
+    font: 11px 'DM Mono', monospace;
+}
+
+.contact-links a:hover {
+    color: var(--accent);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    padding: 25px 5vw;
+
+    font: 10px 'DM Mono', monospace;
+    color: #666;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats {
+        display: none;
+    }
+
+    .nav nav {
+        display: none;
+    }
+
+    .hero-photo {
+        height: 650px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .nav {
+        padding: 0 6vw;
+    }
+
+    .nav-resume {
+        display: none;
+    }
+
+    .logo small {
+        display: none;
+    }
+
+
+    .other-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    }
+
+    /* HERO */
+
+    .hero {
+        display: block;
+
+        min-height: auto;
+
+        padding: 80px 6vw 0;
+    }
+
+    .hero h1 {
+        font-size: 21vw;
+
+        margin-top: 50px;
+    }
+
+    .hero-photo-wrap {
+        height: 520px;
+
+        margin-top: 20px;
+    }
+
+    .hero-photo {
+        height: 520px;
+    }
+
+    .orange-orb {
+        width: 300px;
+        height: 300px;
+
+        bottom: 40px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 75px 6vw;
+    }
+
+    .contact {
+        padding: 75px 6vw;
+    }
+
+
+    /* SPLIT */
+
+    .split {
+        display: block;
+    }
+
+    .split > .content {
+        margin-top: 45px;
+    }
+
+
+    /* GRIDS */
+
+    .project-grid,
+    .skill-grid,
+    .training {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PROJECT CARDS */
+
+    .project-card {
+        min-height: 280px;
+    }
+
+
+    /* PROJECT VIDEO */
+
+    .project-video {
+        aspect-ratio: 9 / 16;
+
+        margin: 18px 0;
+    }
+
+
+    /* OTHER */
+
+    .other {
+        display: block;
+    }
+
+    .other span {
+        display: block;
+
+        margin-top: 15px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-links {
+        flex-wrap: wrap;
+    }
+
+
+    /* BUTTONS */
+
+    .actions {
+        flex-wrap: wrap;
+    }
+}

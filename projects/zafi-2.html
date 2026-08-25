@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Zafi 2.0 — Prasanna</title>
+
+<meta name="description"
+content="Zafi 2.0 — 5.5 ft wheel-based humanoid robot developed through mechanical design, fabrication, electronics and embedded control.">
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.project-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.project-hero {
+  margin-bottom: 70px;
+}
+
+.project-number {
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: .6;
+}
+
+.project-hero h1 {
+  font-size: clamp(50px, 8vw, 110px);
+  line-height: .9;
+  margin: 20px 0;
+}
+
+.project-meta {
+  font-size: 15px;
+  letter-spacing: 1px;
+  opacity: .7;
+}
+
+.project-section {
+  margin: 70px 0;
+}
+
+.project-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.project-section p {
+  max-width: 850px;
+  line-height: 1.8;
+}
+
+.project-list {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.project-gallery img {
+  width: 100%;
+  display: block;
+}
+
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+@media(max-width:700px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="project-page">
+
+  <div class="project-hero">
+
+    <div class="project-number">PROJECT 01</div>
+
+    <h1>ZAFI - 2.0</h1>
+
+    <div class="project-meta">
+      5.5 FT · WHEEL-BASED HUMANOID · PRODUCT DEVELOPMENT
+    </div>
+
+  </div>
+
+
+  <section class="project-section">
+
+    <h2>PROJECT OVERVIEW</h2>
+
+    <p>
+      Zafi 2.0 is a 5.5-foot wheel-based humanoid robot developed
+      as a product-oriented robotics project. I worked across the
+      complete development process, from mechanical design and
+      fabrication to electronics, embedded control, wireless
+      communication, assembly and system integration.
+    </p>
+
+    <p>
+      The robot combines a differential-drive mobile platform with
+      a 5-DOF upper-body mechanism consisting of a neck, two shoulder
+      joints and two elbow joints.
+    </p>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>MY ROLE</h2>
+
+    <p>
+      I worked on the robot from concept and mechanical design
+      through fabrication, electronics integration, embedded
+      programming, assembly, testing and troubleshooting.
+    </p>
+
+    <ul class="project-list">
+      <li>Mechanical design using Fusion 360</li>
+      <li>3D-printed mechanical joints and components</li>
+      <li>CO₂ laser-cut structural components</li>
+      <li>Electronics integration and wiring</li>
+      <li>ESP32 wireless communication</li>
+      <li>Custom joystick controller development</li>
+      <li>Robot assembly and system integration</li>
+      <li>Testing, troubleshooting and servicing</li>
+    </ul>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>MECHANICAL DESIGN & FABRICATION</h2>
+
+    <p>
+      Major mechanical components were designed in Fusion 360.
+      Several joints and structural components were designed as
+      modular parts so that the robot could be assembled,
+      disassembled and serviced more easily.
+    </p>
+
+    <p>
+      3D printing was used for several custom components including
+      neck and shoulder-related mechanisms. Structural parts were
+      fabricated using a CO₂ laser cutting machine.
+    </p>
+
+    <p>
+      The outer body was developed using foam sheet and leather,
+      with silicone-based finishing used to create the final
+      humanoid appearance.
+    </p>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>DEGREES OF FREEDOM</h2>
+
+    <p>
+      The upper body provides 5 degrees of freedom:
+    </p>
+
+    <ul class="project-list">
+      <li>1 × Neck</li>
+      <li>1 × Left Shoulder</li>
+      <li>1 × Right Shoulder</li>
+      <li>1 × Left Elbow</li>
+      <li>1 × Right Elbow</li>
+    </ul>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>ELECTRONICS & CONTROL</h2>
+
+    <ul class="project-list">
+      <li>ESP32 wireless communication</li>
+      <li>Arduino Mega controller</li>
+      <li>5 × 25 kg-cm servo motors</li>
+      <li>Cytron 10 A motor drivers</li>
+      <li>2 × 12 V 100 RPM geared motors</li>
+      <li>12 V 10 Ah battery</li>
+      <li>Buck converter</li>
+      <li>Voltage and current indicator</li>
+      <li>LED strip lighting</li>
+    </ul>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>CUSTOM JOYSTICK CONTROLLER</h2>
+
+    <p>
+      I designed the custom joystick controller housing using
+      Fusion 360 and assembled the controller using a dot PCB,
+      joystick module, push buttons and ESP32.
+    </p>
+
+    <p>
+      The controller uses ESP32 wireless communication and achieved
+      a practical operating range of approximately 60–90 metres
+      during testing.
+    </p>
+
+    <ul class="project-list">
+      <li>ESP32 transmitter</li>
+      <li>Joystick module</li>
+      <li>12 push buttons</li>
+      <li>Custom Fusion 360 enclosure</li>
+      <li>Dot PCB based electronics assembly</li>
+    </ul>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>FACE DISPLAY & COMPUTER VISION</h2>
+
+    <p>
+      A 7-inch display was integrated into the robot's face along
+      with a Raspberry Pi 5 and webcam. A face-recognition system
+      was developed as part of the robot's interactive front-end.
+    </p>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>PRODUCT DEVELOPMENT</h2>
+
+    <p>
+      The robot was developed with a product-oriented approach,
+      focusing on modular assembly, serviceability, fabrication
+      repeatability and overall appearance.
+    </p>
+
+    <p>
+      The approximate prototype development cost was ₹60,000–₹70,000.
+      A planned commercial selling price was around ₹1.5–₹1.6 lakh.
+    </p>
+
+    <p>
+      The platform is also being considered for future AMR
+      integration and further autonomous capabilities.
+    </p>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>PROJECT GALLERY</h2>
+
+    <div class="project-gallery">
+
+      <!-- Replace these with your actual images -->
+
+      <img src="../assets/images/projects/zafi-2/1.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/2.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/3.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/4.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/5.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/6.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/7.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/8.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/9.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/10.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/11.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/12.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/13.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/14.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/15.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/16.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/17.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/18.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/19.jpg" alt="Zafi 2.0">
+      <img src="../assets/images/projects/zafi-2/20.jpg" alt="Zafi 2.0">
+
+      
+
+    </div>
+
+  </section>
+
+
+  <!-- <section class="project-section">
+
+    <h2>PROJECT DEMO</h2>
+
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/s9plh_nCJd0"
+        width="560"
+        height="315"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </section> -->
+
+
+  <a class="back-link" href="../index.html#projects">
+    ← BACK TO PROJECTS
+  </a>
+
+</main>
+
+</body>
+</html>

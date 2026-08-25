@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Autonomous Sample Collection Robot — Prasanna</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.project-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.project-hero {
+  margin-bottom: 70px;
+}
+
+.project-number {
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: .6;
+}
+
+.project-hero h1 {
+  font-size: clamp(45px, 7vw, 95px);
+  line-height: .9;
+  margin: 20px 0;
+}
+
+.project-meta {
+  font-size: 15px;
+  letter-spacing: 1px;
+  opacity: .7;
+}
+
+.project-section {
+  margin: 70px 0;
+}
+
+.project-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.project-section p {
+  max-width: 850px;
+  line-height: 1.8;
+}
+
+.project-list {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.project-gallery img {
+  width: 100%;
+  display: block;
+}
+
+.video-wrap {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+@media(max-width:700px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="project-page">
+
+  <div class="project-hero">
+
+    <div class="project-number">PROJECT 02</div>
+
+    <h1>
+      AUTONOMOUS<br>
+      SAMPLE COLLECTION<br>
+      ROBOT
+    </h1>
+
+    <div class="project-meta">
+      AUTONOMOUS ROBOT · LINE FOLLOWING · OBJECT PICKING · ROBOTIC ARM
+    </div>
+
+  </div>
+
+
+  <section class="project-section">
+
+    <h2>PROJECT OVERVIEW</h2>
+
+    <p>
+      This autonomous robot was developed for a robotics competition
+      conducted as part of the Tamil Nadu Robotics League.
+    </p>
+
+    <p>
+      The competition involved more than 5,000 students from
+      Tamil Nadu, Kerala and Karnataka. The robot was developed
+      around a lunar exploration scenario where a rover lands on
+      the moon, collects three different samples and returns to
+      the designated space-station area.
+    </p>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>MISSION CONCEPT</h2>
+
+    <p>
+      The complete mission was designed to operate autonomously.
+      The robot follows a predefined path, detects sample locations,
+      picks the sample using a robotic arm, places it into a storage
+      container and continues to the next sample.
+    </p>
+
+    <ul class="project-list">
+      <li>Start autonomous mission</li>
+      <li>Follow predefined path</li>
+      <li>Detect sample</li>
+      <li>Stop at sample location</li>
+      <li>Pick object using robotic arm</li>
+      <li>Place object into storage unit</li>
+      <li>Continue path</li>
+      <li>Repeat for three samples</li>
+      <li>Complete return journey</li>
+    </ul>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>HARDWARE</h2>
+
+    <ul class="project-list">
+      <li>Arduino Uno</li>
+      <li>5 × IR sensors</li>
+      <li>L298N motor driver</li>
+      <li>2 × MG90S servo motors</li>
+      <li>12 V lithium-ion battery</li>
+      <li>Buck converter</li>
+      <li>Custom robotic arm</li>
+      <li>Sample storage mechanism</li>
+    </ul>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>CONTROL LOGIC</h2>
+
+    <p>
+      Four IR sensors were used for path following while a central
+      IR sensor was used for sample detection.
+    </p>
+
+    <p>
+      When the central sensor detected an object, the robot stopped
+      and triggered the robotic arm to pick the sample and place it
+      inside the storage unit. After the collection process, the
+      robot resumed autonomous path following.
+    </p>
+
+    <p>
+      The control logic was intentionally developed without a
+      conventional PID implementation so that the system could be
+      understood and reproduced by student teams participating
+      in the competition.
+    </p>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>MY ROLE</h2>
+
+    <p>
+      I was responsible for building and completing the prototype,
+      including the robot hardware, sensor integration, control
+      logic, robotic arm mechanism and autonomous operation.
+    </p>
+
+    <p>
+      After completing the robot, I also transferred the project
+      concept and implementation approach to approximately 10–15
+      STEM trainers so they could guide student teams.
+    </p>
+
+  </section>
+
+
+  <section class="project-section">
+
+    <h2>PROJECT GALLERY</h2>
+
+    <div class="project-gallery">
+
+      <img src="../assets/images/projects/sample-robot/4.jpg"
+           alt="Robot prototype">
+
+      <img src="../assets/images/projects/sample-robot/1.jpg"
+           alt="Autonomous Sample Collection Robot">
+
+      <img src="../assets/images/projects/sample-robot/2.jpg"
+           alt="Robot control system">
+
+      <img src="../assets/images/projects/sample-robot/3.jpg"
+           alt="Robotic arm">
+
+
+
+    </div>
+
+  </section>
+
+
+  <!-- <section class="project-section">
+
+    <h2>PROJECT DEMO</h2>
+
+    <div class="video-wrap">
+
+      
+
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Autonomous Sample Collection Robot Demo"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+  </section> -->
+
+
+  <a class="back-link" href="../index.html#projects">
+    ← BACK TO PROJECTS
+  </a>
+
+</main>
+
+</body>
+</html>
